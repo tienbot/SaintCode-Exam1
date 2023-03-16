@@ -1,0 +1,88 @@
+.order
+    margin: 40px
+    font-family: 'Nunito', sans-serif
+    &__number
+        margin-bottom: 5px
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        color: #73798C
+    &__info
+        margin-bottom: 31px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: 600
+        font-size: 36px
+    hr
+        margin-bottom: 9px
+        background-color: #E2E2E9
+        border: none
+        border-radius: 2px
+        height: 4px
+    &__address
+        margin-bottom: 70px
+        font-size: 16px
+        line-height: 22px
+        .title
+            font-weight: 600
+    &__buttons
+        display: flex
+        justify-content: space-between
+        align-items: center
+    button
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        border: none
+        border-radius: 1000px
+        height: 48px
+        padding: 13px 20px
+        text-align: center
+        width: 100%
+        transition: 0.5s
+        &:hover
+            cursor: pointer
+    &__cancel
+        color: #D15700
+        background: #FFF0E6
+        max-width: 160px
+        &:hover
+            color: #D55406
+            background: #FFD0B2
+    &__menu
+        color: #fff
+        background: #F96900
+        max-width: 190px
+        &:hover
+            background: #ED5D08
+
+@media (max-width: 576px)
+    .order
+        margin: 16px
+        &__number
+            margin-bottom: 4px
+        &__info
+            margin-bottom: 12px
+        &__status
+            font-size: 24px
+            line-height: 33px
+        &__time
+            display: none
+        hr
+            display: none
+        &__address
+            padding: 18px 10px
+            background: #F3F3F7
+            border-radius: 10px
+            .title
+                display: block
+            p
+                width: 80%
+        &__buttons
+            flex-direction: column
+        &__cancel
+            margin-bottom: 10px
+            max-width: unset
+        &__menu
+            max-width: unset
